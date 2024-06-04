@@ -6,24 +6,211 @@
 }
 body{
     width: 100%;
-    
+
+    height: 100%;
+  
 }
-section img{
-    display: block;
-    position: absolute;
+
+.hideOnMobile{
+  display: none;
+}
+
+
+  
+#bg {
+  background-image: url("https://www.adobe.com/br/homepage/fragments/loggedout/row-custom-pods/intro-price/marquee/cc/media_148f2a129210332a5c2de11f946d81cde4a2d5d38.png?width=2000&format=webply&optimize=medium");
+  background-size: cover; 
+    rotate: 360deg;
+   background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
     max-width: 100%;
+
+  
+}
+#name{
+    color: red; 
+    text-align: left;
     
 }
-header ul li {
-    z-index: -1;
-    list-style: none;
-    text-decoration: none;
-    height: inherit;
-    height: 7vh;
+
+#icon{
+   display: flex;
+   background-size: contain;
+  justify-content: center;
+  align-items: center;
+  
+    background-repeat: no-repeat;
+    background-image: url("../img/adobe.png");
+
+
+
+    
+} 
+
+.teste{
+  margin-top: 0%;
 }
-header ul li img{
-    width: 8vw;
+.ic{
+    margin-top: 0%;
     display: flex;
-    background: left;
-    height: 4vh;
+    background-size: cover;
+    color: rgb(111, 115, 119);
+
+
 }
+#Sign{
+    align-items: center;
+    margin-top: 0%;
+    display: flex;
+     
+
+     font-size: small;
+    
+     
+}
+#Sign li{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0%;
+}
+#Sign li a{
+    border: 1px solid grey;
+    border-radius: 90px;
+    font-size: smaller;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 3%;
+
+   
+
+}
+nav{
+    background-color: white;
+    height: 90%;
+  
+  }
+  nav ul{
+    height: 10%;
+    width: 90%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  nav li{
+    display: flex;
+    height: fit-content;
+
+  }
+  nav a{
+
+
+   
+    padding: 0px 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    
+
+    
+  }
+.aids{
+    display: flex;
+  
+  
+
+}
+.sidebar{display: inline;}
+.hideOnMobile{
+    display: contents;
+  }
+
+  .hide{
+   
+    display: none;
+    flex: 40%;
+  }
+
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .teste{
+    flex: 60%;
+    display: flex;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: in;
+  }
+  @media(min-width: 1000px){
+  
+    .hideOnMobile {display: block;}
+    .menu-button{
+      display: none;
+    }
+    .sidebar{
+      display: none;
+    }
+    .hide{
+      display: flex;
+    }
+    .nav{
+      align-items: center;
+      flex: 20px;
+      margin-top: 3%;
+    }
+
+    .teste{
+      margin-top: 3%;
+    }
+    .ic{
+    
+      display: flex;
+      background-size: cover;
+      color: rgb(111, 115, 119);
+    margin-top: 3%;
+  
+  }
+  .icon{
+    display: flex;
+    margin-top: 3%;
+    background-size: contain;
+  }
+    ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      margin-left: 90px;
+      max-width: 95%;
+      height: auto;
+      margin-top: 3%;
+    }
+   
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    
+    }}
